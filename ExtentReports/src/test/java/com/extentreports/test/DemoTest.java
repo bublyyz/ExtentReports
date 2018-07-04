@@ -10,7 +10,7 @@ public class DemoTest {
 	
 	@Test(priority=1)
 	public void validLogin(){
-		Reporter.log("Executing ValidLogin",true);
+		Reporter.log("Executing ValidLogin789",true);
 	}
 
 	@Test(priority=2)
