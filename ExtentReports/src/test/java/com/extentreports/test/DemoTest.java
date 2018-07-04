@@ -15,7 +15,7 @@ public class DemoTest {
 
 	@Test(priority=2)
 	public void invalidLogin(){
-		Reporter.log("Executing Invalid9Login",true);
+		Reporter.log("Executing InvalidLogin",true);
 		Assert.fail();		
 	}
 	
