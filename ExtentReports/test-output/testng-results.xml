@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="653" started-at="2018-07-04T13:40:01Z" finished-at="2018-07-04T13:40:01Z">
+  <suite name="Default suite" duration-ms="1069" started-at="2018-07-10T13:16:48Z" finished-at="2018-07-10T13:16:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="653" started-at="2018-07-04T13:40:01Z" finished-at="2018-07-04T13:40:01Z">
+    <test name="Default test" duration-ms="1069" started-at="2018-07-10T13:16:48Z" finished-at="2018-07-10T13:16:49Z">
       <class name="com.extentreports.test.ExtentReportsClass">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.extentreports.test.ExtentReportsClass@50c87b21]" name="startReport" is-config="true" duration-ms="107" started-at="2018-07-04T19:10:01Z" finished-at="2018-07-04T19:10:01Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.extentreports.test.ExtentReportsClass@100fc185]" name="startReport" is-config="true" duration-ms="231" started-at="2018-07-10T18:46:48Z" finished-at="2018-07-10T18:46:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="FAIL" signature="failTest()[pri:0, instance:com.extentreports.test.ExtentReportsClass@50c87b21]" name="failTest" duration-ms="8" started-at="2018-07-04T19:10:01Z" finished-at="2018-07-04T19:10:01Z">
+        <test-method status="FAIL" signature="failTest()[pri:0, instance:com.extentreports.test.ExtentReportsClass@100fc185]" name="failTest" duration-ms="8" started-at="2018-07-10T18:46:48Z" finished-at="2018-07-10T18:46:48Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -22,7 +22,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.extentreports.test.ExtentReportsClass.failTest(ExtentReportsClass.java:54)
+	at com.extentreports.test.ExtentReportsClass.failTest(ExtentReportsClass.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,18 +53,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.extentreports.test.ExtentReportsClass@50c87b21]" name="getResult" is-config="true" duration-ms="332" started-at="2018-07-04T19:10:01Z" finished-at="2018-07-04T19:10:01Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.extentreports.test.ExtentReportsClass@100fc185]" name="getResult" is-config="true" duration-ms="577" started-at="2018-07-10T18:46:48Z" finished-at="2018-07-10T18:46:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=failTest status=FAILURE method=ExtentReportsClass.failTest()[pri:0, instance:com.extentreports.test.ExtentReportsClass@50c87b21] output={null}]]]>
+                <![CDATA[[TestResult name=failTest status=FAILURE method=ExtentReportsClass.failTest()[pri:0, instance:com.extentreports.test.ExtentReportsClass@100fc185] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.extentreports.test.ExtentReportsClass@50c87b21]" name="endReport" is-config="true" duration-ms="188" started-at="2018-07-04T19:10:01Z" finished-at="2018-07-04T19:10:01Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.extentreports.test.ExtentReportsClass@100fc185]" name="endReport" is-config="true" duration-ms="242" started-at="2018-07-10T18:46:49Z" finished-at="2018-07-10T18:46:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

@@ -30,7 +30,7 @@ public class ExtentReportsClass {
 	 @BeforeTest
 	 public void startReport(){
 		
-		extent = new ExtentReports(System.getProperty("user.dir") +"\\reports\\er.html",true);//("D:\\New folder\\ExtentReports\\reports\\er.html",true); //(System.getProperty("user.dir") +"/test-output/STMExtentReport.html", true);
+		extent = new ExtentReports(System.getProperty("user.dir") +"\\reports\\er.html",true);
 		extent.addSystemInfo("Host Name", "Software Testing Material");
         extent.addSystemInfo("Environment", "Automation Testing");
         extent.addSystemInfo("User Name", "Veena");
@@ -48,9 +48,7 @@ public class ExtentReportsClass {
 	 
 	 @Test
 	 public void failTest(){
-		 logger = extent.startTest("failTest");
-		 
-		 
+		 logger = extent.startTest("failTest");		 
 		 Assert.assertTrue(false);
 		 logger.log(LogStatus.PASS, "Test Case (failTest) Status is passed");
 	 }
@@ -74,19 +72,19 @@ public class ExtentReportsClass {
 				logger.addScreencast(imagePath);
 				logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
 			 	logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable());
-				//logger.addScreenCapture(imagePath);
-				
+			 	logger.log(LogStatus.FAIL,logger.addScreenCapture(imagePath));
 				System.out.println(imagePath);
 				
 		 }
 		 else if(result.getStatus() == ITestResult.SKIP){
 			 logger.log(LogStatus.SKIP, "Test Case Skipped is "+result.getName());
 		 }
+		 extent.endTest(logger);
 	 }
 	 
 	 @AfterTest
 	 public void endReport(){
 		 extent.flush();
-	     //extent.close();
+	     extent.close();
 	   }
 }
