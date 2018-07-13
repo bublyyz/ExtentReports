@@ -69,7 +69,6 @@ public class ExtentReportsClass {
 				BufferedImage image= r.createScreenCapture(screenRect);
 				String imagePath="D://abc.png";
 				ImageIO.write(image,"png",new File(imagePath));	
-				logger.addScreencast(imagePath);
 				logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
 			 	logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable());
 			 	logger.log(LogStatus.FAIL,logger.addScreenCapture(imagePath));
